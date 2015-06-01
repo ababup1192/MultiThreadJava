@@ -7,8 +7,8 @@ public class Main {
 
     public static void main(String[] args) {
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
-        threadFactory.newThread(new Printer("foo")).start();
-        threadFactory.newThread(new Printer("bar")).start();
+        threadFactory.newThread(new Printer("foo\n")).start();
+        threadFactory.newThread(new Printer("bar\n")).start();
     }
 
 }
