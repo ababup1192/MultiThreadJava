@@ -4,12 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Thread thread = new MyThread();
-        thread.start();
+        new Thread(new Printer("foo")).start();
+        new Thread(new Printer("bar")).start();
 
-        for (int i = 0; i < 10000; i++) {
-            System.out.print("[Good:" + i + "!]");
-        }
     }
 
 }
