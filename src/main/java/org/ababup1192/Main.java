@@ -6,9 +6,10 @@ import java.util.concurrent.ThreadFactory;
 public class Main {
 
     public static void main(String[] args) {
+        Bank bank = new Bank("A Bad Bank", 3000);
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
-        threadFactory.newThread(new Printer("foo\n")).start();
-        threadFactory.newThread(new Printer("bar\n")).start();
+        threadFactory.newThread(new Client(bank)).start();
+        threadFactory.newThread(new Client(bank)).start();
     }
 
 }
