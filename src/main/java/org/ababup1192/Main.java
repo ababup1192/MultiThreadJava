@@ -6,10 +6,12 @@ import java.util.concurrent.ThreadFactory;
 public class Main {
 
     public static void main(String[] args) {
-        Bank bank = new Bank("A Bad Bank", 3000);
+        Gate gate = new Gate();
+
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
-        threadFactory.newThread(new Client(bank)).start();
-        threadFactory.newThread(new Client(bank)).start();
+        threadFactory.newThread(new User(gate, "Alice", "Alaska")).start();
+        threadFactory.newThread(new User(gate, "Bobby", "Brazil")).start();
+        threadFactory.newThread(new User(gate, "Chris", "Canada")).start();
     }
 
 }
