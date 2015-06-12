@@ -6,12 +6,12 @@ import java.util.concurrent.ThreadFactory;
 public class Main {
 
     public static void main(String[] args) {
-        Gate gate = new Gate();
+        BoundedResource resource = new BoundedResource(3);
 
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
-        threadFactory.newThread(new User(gate, "Alice", "Alaska")).start();
-        threadFactory.newThread(new User(gate, "Bobby", "Brazil")).start();
-        threadFactory.newThread(new User(gate, "Chris", "Canada")).start();
+        for (int i = 0; i < 10; i++) {
+            threadFactory.newThread(new User(resource)).start();
+        }
     }
 
 }

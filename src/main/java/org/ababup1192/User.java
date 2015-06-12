@@ -1,21 +1,22 @@
 package org.ababup1192;
 
-public class User implements Runnable {
-    private final Gate gate;
-    private final String myName;
-    private final String myAddress;
+import java.util.Random;
 
-    public User(Gate gate, String myName, String myAddress){
-        this.gate = gate;
-        this.myName = myName;
-        this.myAddress = myAddress;
+public class User implements Runnable {
+    private final static Random random =  new Random(26535);
+    private final BoundedResource resource;
+
+    public User(BoundedResource resource){
+        this.resource = resource;
     }
 
     @Override
     public void run() {
-        System.out.println(myName + " BEGIN");
-        while (true) {
-            gate.pass(myName, myAddress);
-        }
+        try{
+            while(true){
+                resource.use();
+                Thread.sleep(random.nextInt(3000));
+            }
+        }catch(InterruptedException e){}
     }
 }
