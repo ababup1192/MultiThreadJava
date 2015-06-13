@@ -6,12 +6,12 @@ import java.util.concurrent.ThreadFactory;
 public class Main {
 
     public static void main(String[] args) {
-        BoundedResource resource = new BoundedResource(3);
-
+        Tool spoon = new Tool("Spoon");
+        Tool fork = new Tool("Fork");
+        Pair pair = new Pair(spoon, fork);
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
-        for (int i = 0; i < 10; i++) {
-            threadFactory.newThread(new User(resource)).start();
-        }
+        threadFactory.newThread(new Eater("Alice", pair)).start();
+        threadFactory.newThread(new Eater("Bobby", pair)).start();
     }
 
 }
