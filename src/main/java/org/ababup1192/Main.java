@@ -6,12 +6,11 @@ import java.util.concurrent.ThreadFactory;
 public class Main {
 
     public static void main(String[] args) {
-        Tool spoon = new Tool("Spoon");
-        Tool fork = new Tool("Fork");
-        Pair pair = new Pair(spoon, fork);
+        Person alice = new Person("Alice", "Alaska");
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
-        threadFactory.newThread(new Eater("Alice", pair)).start();
-        threadFactory.newThread(new Eater("Bobby", pair)).start();
+        for (int i = 0; i < 3; i++) {
+            threadFactory.newThread(new PrintPerson(alice)).start();
+        }
     }
 
 }
