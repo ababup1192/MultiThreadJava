@@ -3,15 +3,12 @@ package org.ababup1192;
 public class Main {
 
     public static void main(String[] args) {
-        Data data = new Data(10);
-        new ReaderThread(data).start();
-        new ReaderThread(data).start();
-        new ReaderThread(data).start();
-        new ReaderThread(data).start();
-        new ReaderThread(data).start();
-        new ReaderThread(data).start();
-        new WriterThread(data, "ABCDEFGHIJKLMNOPQRSTUVWXYZ").start();
-        new WriterThread(data, "abcdefghijklmnopqrstuvwxyz").start();
+        System.out.println("main BEGIN");
+        Host host = new Host();
+        host.request(10, 'A');
+        host.request(20, 'B');
+        host.request(30, 'C');
+        System.out.println("main END");
     }
 
 }
