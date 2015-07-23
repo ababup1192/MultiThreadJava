@@ -91,11 +91,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Proxy.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Proxy.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/Proxy.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.12931034">
-              <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding>
                 <element signature="e#428#436#0" expanded="true" />
                 <element signature="e#612#613#0" expanded="true" />
@@ -163,11 +163,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Servant.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Servant.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/Servant.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.06465517">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -466,7 +466,6 @@
         <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/RealResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/ActiveObject.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/DisplayClientThread.java" />
-        <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/Servant.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/MethodRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/MakeStringRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/ActiveObjectQueue.java" />
@@ -477,6 +476,7 @@
         <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/MakeClientThread.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/Proxy.java" />
+        <option value="$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/Servant.java" />
       </list>
     </option>
   </component>
@@ -1020,12 +1020,12 @@
       <workItem from="1437282896240" duration="1404000" />
       <workItem from="1437444608946" duration="5000" />
       <workItem from="1437640575973" duration="1738000" />
-      <workItem from="1437656419664" duration="6079000" />
+      <workItem from="1437656419664" duration="6436000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44617000" />
+    <option name="totallyTimeSpent" value="44974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
@@ -1305,14 +1305,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/Servant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/MethodRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1391,13 +1383,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/Proxy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12931034">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
             <element signature="e#428#436#0" expanded="true" />
             <element signature="e#612#613#0" expanded="true" />
             <element signature="e#687#688#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/org/ababup1192/activeobject/Servant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06465517">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

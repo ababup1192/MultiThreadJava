@@ -1,6 +1,6 @@
 package org.ababup1192.activeobject;
 
-public class Servant implements ActiveObject {
+class Servant implements ActiveObject {
     @Override
     public Result<String> makeString(int count, char fillChar) {
         char[] buffer = new char[count];
