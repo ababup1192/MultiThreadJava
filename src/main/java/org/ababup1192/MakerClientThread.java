@@ -3,11 +3,11 @@ package org.ababup1192;
 import org.ababup1192.activeobject.ActiveObject;
 import org.ababup1192.activeobject.Result;
 
-public class MakeClientThread extends Thread {
+public class MakerClientThread extends Thread {
     private final ActiveObject activeObject;
     private final char fillChar;
 
-    public MakeClientThread(String name, ActiveObject activeObject) {
+    public MakerClientThread(String name, ActiveObject activeObject) {
         super(name);
         this.activeObject = activeObject;
         this.fillChar = name.charAt(0);

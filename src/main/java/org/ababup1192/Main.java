@@ -7,9 +7,9 @@ public class Main {
 
     public static void main(String[] args) {
         ActiveObject activeObject = ActiveObjectFactory.createActiveObject();
-        new MakeClientThread("Alice", activeObject).start();
-        new MakeClientThread("Bobby", activeObject).start();
-        new MakeClientThread("Chris", activeObject).start();
+        new MakerClientThread("Alice", activeObject).start();
+        new MakerClientThread("Bobby", activeObject).start();
+        new DisplayClientThread("Chris", activeObject).start();
     }
 
 }
